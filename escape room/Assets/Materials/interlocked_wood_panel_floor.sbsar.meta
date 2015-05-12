@@ -1,17 +1,97 @@
 fileFormatVersion: 2
 guid: f5ae1043c99c72a44b947e3d46066182
-timeCreated: 1431172748
-licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
   materialInstances:
-  - serializedVersion: 15
+  - serializedVersion: 12
     name: interlocked_wood_panel_floor
     prototypeName: interlocked_wood_panel_floor
-    shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
-    renderQueue: -1
-    inputs: []
+    shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: hue_shift
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: saturation
+      value:
+        scalar[0]: .5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: luminosity
+      value:
+        scalar[0]: .5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: contrast
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: normal_format
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: normal_intensity
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: roughness
+      value:
+        scalar[0]: .631372988
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: roughness_range
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: height_range
+      value:
+        scalar[0]: .25
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: height_position
+      value:
+        scalar[0]: .5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -21,9 +101,28 @@ SubstanceImporter:
       animationUpdateRate: 0
     materialProperties:
       serializedVersion: 2
-      texEnvs: {}
-      floats: {}
-      colors: {}
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {fileID: 242894968, guid: 69bc3ac9ea20a6f428577cf686822267, type: 3}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _Shininess
+          second: .078125
+      colors:
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _SpecColor
+          second: {r: .5, g: .5, b: .5, a: 1}
     textureParameters:
     - name: interlocked_wood_panel_floor_diffuse
       alphaSource: 6
@@ -53,24 +152,8 @@ SubstanceImporter:
     textureAssignments:
     - shaderProp:
         name: _MainTex
-      material: {instanceID: 0}
-      baseUID: 4161288069
-    - shaderProp:
-        name: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 4151507660
-    - shaderProp:
-        name: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 4151507777
-    - shaderProp:
-        name: _OcclusionMap
-      material: {instanceID: 0}
-      baseUID: 4151507838
-    - shaderProp:
-        name: _SpecGlossMap
-      material: {instanceID: 0}
-      baseUID: 4161288071
+      material: {fileID: -264476352, guid: 69bc3ac9ea20a6f428577cf686822267, type: 3}
+      baseUID: 1493162119
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
@@ -80,5 +163,3 @@ SubstanceImporter:
       loadingBehavior: 1
   deletedPrototypes: []
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 

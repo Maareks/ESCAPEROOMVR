@@ -1,0 +1,44 @@
+
+newmtl painted_interior_wall_with_cracked_paint
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.0
+illum 2
+map_Kd painted_interior_wall_with_cracked_paint.sbsar
+
+
+
+newmtl interlocked_wood_panel_floor
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.0
+illum 2
+map_Kd interlocked_wood_panel_floor.sbsar
+
+
+
+newmtl ceiling_extravagent_wood
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.0
+illum 2
+map_Kd ceiling_extravagent_wood.sbsar
+
+
+
+newmtl wood_tiling_small_detail_generic
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  0.0
+illum 2
+map_Kd wood_tiling_small_detail_generic.sbsar
+
+

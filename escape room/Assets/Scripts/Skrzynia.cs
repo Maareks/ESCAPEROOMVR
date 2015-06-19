@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Skrzynia : MonoBehaviour {
 	public UnityEngine.UI.Image LeweKolko;
 	public UnityEngine.UI.Image PraweKolko;
@@ -8,25 +9,24 @@ public class Skrzynia : MonoBehaviour {
 	private BoxCollider box;
 	// Use this for initialization
 	void Start () {
-		anim = GetComponentInChildren<Animator>();
-		box = GetComponent<BoxCollider> ();
+			anim = GetComponentInChildren<Animator>();
+			box = GetComponent<BoxCollider> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (LeweKolko.fillAmount == 1) {
+		if ((LeweKolko.fillAmount == 1) && (klucz.key_box == true)) {
 			anim.SetTrigger ("Open");
 			LeweKolko.fillAmount = 0;
 			box.enabled=false;
-
 		}
 	}
 	void Ciagle(){
-		LeweKolko.fillAmount += Time.deltaTime;
-
+		if (klucz.key_box == true) {
+			LeweKolko.fillAmount += Time.deltaTime;
+		}
 	}
 	void Koniec(){
-		LeweKolko.fillAmount = 0;
-		
+		LeweKolko.fillAmount = 0;	
 	}
 }

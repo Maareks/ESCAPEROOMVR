@@ -1,21 +1,19 @@
 fileFormatVersion: 2
-guid: d0882da95153541c09fc1451e68b2ec1
-labels:
-- Prop
+guid: ec8d7dd31470b0d41b55b4655e5f315c
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: scroll
+    100000: pb-Cube-484600
     100002: //RootNode
-    400000: scroll
+    400000: pb-Cube-484600
     400002: //RootNode
-    2300000: scroll
-    3300000: scroll
-    4300000: scroll
+    2300000: pb-Cube-484600
+    3300000: pb-Cube-484600
+    4300000: pb-Cube-484600
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 0
+    materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -36,7 +34,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -49,7 +47,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0

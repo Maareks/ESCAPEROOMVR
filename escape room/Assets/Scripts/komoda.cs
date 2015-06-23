@@ -4,19 +4,20 @@ using System.Collections;
 public class komoda : MonoBehaviour {
 	public UnityEngine.UI.Image LeweKolko;
 	public UnityEngine.UI.Image PraweKolko;
-	private BoxCollider box;
+	private BoxCollider collider_komoda;
 	static public bool komoda_droga; 
+	public bool testklucz;
 
 	void Start () {
-		box = GetComponent<BoxCollider> ();
+		collider_komoda = GetComponent<BoxCollider> ();
 		komoda_droga = false;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+		testklucz = komoda_droga;
 		if (LeweKolko.fillAmount == 1) {
 			LeweKolko.fillAmount = 0;
-			box.enabled=false;
+			collider_komoda.enabled=false;
 			komoda_droga = true;
 		}
 	}
@@ -24,8 +25,8 @@ public class komoda : MonoBehaviour {
 	void Ciagle(){
 		LeweKolko.fillAmount += Time.deltaTime;
 	}
+
 	void Koniec(){
 		LeweKolko.fillAmount = 0;
-		komoda_droga = true;
 	}
 }

@@ -6,13 +6,12 @@ public class Skrzynia : MonoBehaviour {
 	public UnityEngine.UI.Image PraweKolko;
 	private Animator anim;
 	private BoxCollider box;
-	// Use this for initialization
+
 	void Start () {
 			anim = GetComponentInChildren<Animator>();
 			box = GetComponent<BoxCollider> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if ((LeweKolko.fillAmount == 1) && (klucz.key_box == true)) {
 			anim.SetTrigger ("Open");

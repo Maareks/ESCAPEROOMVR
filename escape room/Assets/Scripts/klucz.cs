@@ -5,17 +5,16 @@ public class klucz : MonoBehaviour {
 	public UnityEngine.UI.Image LeweKolko;
 	public UnityEngine.UI.Image PraweKolko;
 	static public bool key_box;
-	private BoxCollider box;
+	private BoxCollider collider_key;
 
 	void Start () {
-		box = GetComponent<BoxCollider> ();
-		box.enabled = false;
+		collider_key = GetComponent<BoxCollider> ();
+		collider_key.enabled = false;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (komoda.komoda_droga == true) {
-			box.enabled = true;
+			collider_key.enabled= true;
 		}
 		if ((LeweKolko.fillAmount == 1) && (komoda.komoda_droga == true)){
 			LeweKolko.fillAmount = 0;
@@ -23,11 +22,11 @@ public class klucz : MonoBehaviour {
 			key_box = true;
 		}
 	}
+
 	void Ciagle(){
-		if (komoda.komoda_droga = true) {
 			LeweKolko.fillAmount += Time.deltaTime;
-		}
 	}
+
 	void Koniec(){
 		LeweKolko.fillAmount = 0;
 	}

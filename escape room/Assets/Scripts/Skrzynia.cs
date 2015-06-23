@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class Skrzynia : MonoBehaviour {
 	public UnityEngine.UI.Image LeweKolko;
 	public UnityEngine.UI.Image PraweKolko;

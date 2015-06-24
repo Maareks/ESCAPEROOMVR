@@ -6,6 +6,8 @@ public class Skrzynia : MonoBehaviour {
 	public UnityEngine.UI.Image PraweKolko;
 	private Animator anim;
 	private BoxCollider box;
+	public Vector3 position;
+	static public bool go_box;
 
 	void Start () {
 			anim = GetComponentInChildren<Animator>();
@@ -16,7 +18,8 @@ public class Skrzynia : MonoBehaviour {
 		if ((LeweKolko.fillAmount == 1) && (klucz.key_box == true)) {
 			anim.SetTrigger ("Open");
 			LeweKolko.fillAmount = 0;
-			box.enabled=false;
+			box.enabled = false;
+			go_box = true;
 		}
 	}
 	void Ciagle(){

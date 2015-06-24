@@ -19,15 +19,23 @@ public class klucz : MonoBehaviour {
 		if ((LeweKolko.fillAmount == 1) && (komoda.komoda_droga == true)){
 			LeweKolko.fillAmount = 0;
 			gameObject.SetActive (false);
-			key_box = true;
+			key_box = true;;
 		}
 	}
 
 	void Ciagle(){
 			LeweKolko.fillAmount += Time.deltaTime;
+	//	StartCoroutine (Przejscie());
 	}
 
 	void Koniec(){
 		LeweKolko.fillAmount = 0;
 	}
+
+//	IEnumerator Przejscie(){
+//	while (jeszczeniedotarl) {
+	//		Przesun
+	//			yield return null;
+	//	}
+	//}
 }

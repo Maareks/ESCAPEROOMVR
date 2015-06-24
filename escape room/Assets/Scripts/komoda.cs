@@ -6,7 +6,6 @@ public class komoda : MonoBehaviour {
 	public UnityEngine.UI.Image PraweKolko;
 	private BoxCollider collider_komoda;
 	static public bool komoda_droga; 
-	public bool testklucz;
 
 	void Start () {
 		collider_komoda = GetComponent<BoxCollider> ();
@@ -14,11 +13,10 @@ public class komoda : MonoBehaviour {
 	}
 
 	void Update () {
-		testklucz = komoda_droga;
 		if (LeweKolko.fillAmount == 1) {
 			LeweKolko.fillAmount = 0;
-			collider_komoda.enabled=false;
 			komoda_droga = true;
+			collider_komoda.enabled=false;
 		}
 	}
 
